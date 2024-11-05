@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+html {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary: #030303;
+  --secondary: #1f2223;
+  --border: rgba(63, 63, 70, 0.4);
+  --Transparent-stroke: rgba(255, 255, 255, 0.13);
+  --mycolor: rgba(22, 111, 95, 0.9);
+  --Transparent-background: rgba(255, 255, 255, 0.03);
+  --title: rgb(244 244 245);
+  --subtitle: rgb(161 161 170);
+  --blue: rgb(31, 173, 144);
+  --vr: #089afe;
+
+  --cpb: 2rem;
+  --cps: 1.7rem;
+}
+
+.light {
+  --primary: #f6f6f6;
+}
+
+body {
+  background-color: var(--primary);  /* HNA BACK KBIRA LI B k7EL */
+  color: #fff;
+}
+
+.container {
+  border: 1px solid var(--border);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary);   /* HNA BACK SGHER LI B GRIS */
+  padding: 0 var(--cpb);
+}
+
+.diveder {
+  border: 1px solid var(--border);
+  margin: 3rem 0;
+
+  width: calc(100% + var(--cpb) + var(--cpb));
+  margin-left: calc(var(--cpb) * -1);
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: initial;
+  transition: 0.2s;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.border {
+  border: 1px solid var(--border);
+}
+
+.cadr {
+  border: 3px solid red;
+}
+button {
+  all: unset;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  scale: 0.9;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid var(--Transparent-stroke);
+  background: var(--Transparent-background);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mycolor);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vr);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--vr);
+}
+
+
+
+
+
+
+
+
+.scroll2up{
+  background-color: var(--mycolor);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  text-align: center;
+  opacity: 0.5;
+  transition: 0.3s;
+  border: 1px solid #fff;
+}
+
+.scroll2up:hover{
+  opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+    padding: 0 var(--cps);
+  }
+
+  .diveder {
+    width: calc(100% + var(--cps) + var(--cps));
+    margin-left: calc(var(--cps) * -1);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 0 var(--cps);
+  }
+
+  .scroll2up{
+    height: 2.2rem;
+    width: 2.2rem;
+    opacity: 0.4;
+  }
+}
